@@ -1,0 +1,213 @@
+/*CSS para inicializar projeto*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*propriedades do layout admin*/
+
+/*header propriedades usuário*/
+
+body{
+     background-color: #E5E5E5;
+     padding: 10px 10px;
+}
+
+header{
+     width: 217px;
+     height: 100ch;
+     background-color: #101936;
+     border-radius: 10px;
+}
+
+.header-menu{
+     padding: 0px 10px;
+     padding-top: 10px;
+     display: flex;
+     align-items: center;
+}
+
+.header-menu, .header-menu a{
+     color: white;
+     text-decoration: none;
+}
+
+.header-menu a:hover{
+     text-decoration: underline;
+}
+
+.header-menu a{
+     font-size: 25px;
+     font-weight: bold;
+     font-family: 'Oswald', sans-serif;
+     color: #F9BB44;
+     margin-right: 20px;
+}
+
+#btn-menu{
+     width: 40px;
+     height: 40px;
+     border: 1px solid rgba(255, 255, 255, 0.473);
+     padding: 3px 3px;
+     border-radius: 40px;
+     background-color: rgba(255, 255, 255, 0.199);
+     cursor: pointer;
+     box-shadow: 0 5px 8px rgba(255, 255, 255, 0.192);
+}
+
+#btn-menu:hover{
+     background-color: rgba(255, 255, 255, 0.322);
+}
+
+.header-imagem-ident{
+     display: flex;
+     align-items: center;
+     font-family: 'Oswald', sans-serif;
+     color: white;
+     padding: 0px 5px;
+     padding-top: 5px;
+}
+
+.person-user-avatar{
+     width: 50px;
+     height: 50px;
+}
+
+.image-user{
+     margin-right: 5px;
+     border: 1px solid rgba(255, 255, 255, 0.473);
+     background-color: rgba(255, 255, 255, 0.199);
+     border-radius: 27px;
+     padding: 1px 1px;
+}
+
+.dropdown-user-ident{
+     padding: 0;
+     margin: 0;
+     height: 30px;
+     font-size: 15px;
+     width: 150px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     padding-left: 5px;
+     border: 1px solid rgba(255, 255, 255, 0.473);
+     background-color: rgba(255, 255, 255, 0.199);
+     color: #F9BB44;
+}
+
+.dropdown-user-ident:hover{
+     color: #F9BB44;
+     background-color: rgba(255, 255, 255, 0.322);
+}
+
+/*header propriedades nav botões*/
+
+nav{
+     padding: 10px 0px 0px 5px;
+}
+
+.btn-amb-cubo-btn{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap-reverse;
+     
+}
+
+.amb-cubo-top-btn{
+     display: flex;
+     justify-content: right;
+}
+
+.amb-btns-nav-cx{
+     padding: 2px 0 2px 2px;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     background-color: #E5E5E5;
+}
+
+.circle{
+     width: 20px;
+     height: 20px;
+     border-radius: 20px;
+     position: relative;
+     background-color: #101936;
+     
+}
+
+.cubo-top-btn, .cubo-bottom-btn{
+     position: relative;
+     width: 10px;
+     height: 10px;
+     background-color: #E5E5E5;
+}
+
+.cubo-top-btn{
+     position: relative;
+     top: 10px;
+     left: 20px;
+}
+
+.cubo-bottom-btn{
+     position: relative;
+     left: 20px;
+     height: 20px;
+}
+
+.cubo-bottom-ult-btn{
+     height: 10px;
+     border: 1px solid red;
+}
+
+.btns-nav-menu{
+     display: flex;
+     justify-content: left;
+     height: 47px;
+     width: 100%;
+     border-radius: 10px;
+     font-family: 'Oswald', sans-serif;
+     font-size: 25px;
+     color: #F9BB44;
+     background-color: #101936c9;
+     border: 1px solid rgba(255, 255, 255, 0.74);
+}
+
+.btns-nav-menu:hover{
+     background-color: #1019368e;
+     color: #F9BB44;
+}
+
+.bi-icons-btns{
+     width: 30px;
+     height: 30px;
+     margin-right: 20px;
+     margin-left: -5px;
+}
+
+
+
+
+
+
+
+
