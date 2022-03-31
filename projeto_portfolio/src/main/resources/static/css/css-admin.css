@@ -218,7 +218,7 @@ section {
 }
 
 main{
-     height: 115px;
+     height: 77px;
      width: 100%;
      border-radius: 10px;
      background-color: #101936;
@@ -240,13 +240,100 @@ main{
 
 footer{
      margin-top: 10px;
-     height: 165px;
+     height: 203px;
      width: 100%;
      background-color: #101936;
      border-radius: 10px;
+     color: #F9BB44;
 }
 
+footer ul{
+     padding: 40px 20px 0px 40px;
+     display: flex;
+     font-family: 'Oswald', sans-serif;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
 
+footer ul li .a-icon-footer{
+     padding: 20px 20px;
+     color: #F9BB44;
+     font-size: 28px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.116);
+     white-space: nowrap;
+     width: 195px;
+}
+
+footer ul li a:hover{
+     color: #F9BB44;
+     background-color: rgba(255, 255, 255, 0.322);
+}
+
+ul .amb-icons-footer{
+     padding-top: 10px;
+     display: flex;
+     padding-left: 0;
+}
+
+.amb-icons-a-footer{
+     display: flex;
+     flex-direction: column;
+}
+
+.amb-icons-footer a{
+     padding: 5px 10px 10px 10px;
+     margin-right: 5px;
+     background-color: rgba(255, 255, 255, 0.116);
+     border-radius: 10px;
+}
+
+ul li .icons-footer{
+     width: 30px;
+     height: 30px;
+     color: #F9BB44;
+     
+}
+
+/*main propriedades*/
+
+main{
+     
+     display: flex;
+     justify-content: right;
+     align-items: center;
+}
+
+#input-search-main{
+     width: 188px;
+     height: 44px;
+     margin: 0 15px 0 0px;
+     background-color: rgba(255, 255, 255, 0.158);
+     border-radius: 10px;
+     border: 1px solid rgba(255, 255, 255, 0.39);
+     color: white;
+     font-family: 'Oswald', sans-serif;
+}
+
+#input-search-main::placeholder{
+     color: #f9ba449f;
+     font-family: 'Oswald', sans-serif;
+}
+
+.icons-main{
+     margin-right: 10px;
+     width: 45px;
+     height: 45px;
+     color: #F9BB44;
+     background-color: rgba(255, 255, 255, 0.116);
+     padding: 10px 10px;
+     border-radius: 10px;
+}
+
+.icons-main:hover{
+     background-color: rgba(255, 255, 255, 0.322);
+     cursor: pointer;
+}
 
 
 
