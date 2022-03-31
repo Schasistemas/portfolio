@@ -24,6 +24,94 @@ ol, ul {
 	list-style: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+     width: 10px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     background: #f1f1f1; 
+   }
+    
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #888; 
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #101936; 
+   }
+
+/*propriedades css padrão para título de layouts*/
+
+.titulos-amb{
+     color: #F9BB44;
+     font-family: 'Oswald', sans-serif;
+     font-size: 25px;
+     margin: -5px 0 10px 0;
+}
+
+.form-cad-candidatos{
+     background-color: #101936;
+     width: 100%;
+     height: 119px;
+}
+
+.subtitulos-amb{
+     color: #F9BB44;
+     font-family: 'Oswald', sans-serif;
+     font-size: 20px;
+     margin-top: -5px;
+}
+
+.inputs-config::placeholder{
+     color: #f9ba449f;
+     font-family: 'Oswald', sans-serif;
+     font-size: 15px;
+     padding-bottom: -5px;
+}
+
+.inputs-config{
+     background-color: rgba(255, 255, 255, 0.158);
+     border: 1px solid rgba(255, 255, 255, 0.24);
+     height: 38px;
+     margin-top: 10px;
+     font-family: 'Oswald', sans-serif;
+     color: white;
+}
+
+.amb-btns-config{
+     padding-top: 5px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.btns1{
+     margin-right: 2.5px;
+}
+.btns2{
+     margin-left: 2.5px;
+}
+
+.btns1, .btns2{
+     padding-top: 0;
+     height: 28px;
+     font-weight: unset;
+     font-family: 'Oswald', sans-serif;
+}
+
+.table{
+     font-family: 'Oswald', sans-serif;
+}
+
+.amb-table{
+     height: 150px;
+     overflow: auto;
+}
+
 /*propriedades do layout admin*/
 
 /*header propriedades usuário*/
@@ -230,6 +318,9 @@ main{
      width: 100%;
      background-color: #101936;
      border-radius: 10px;
+     padding: 10px 10px;
+     padding-bottom: 0;
+     overflow: auto;
 }
 
 .a-header-menu{
@@ -335,8 +426,88 @@ main{
      cursor: pointer;
 }
 
+/*dachboard propriedades*/
 
+.amb-menu-dachboard{
+     width: 100%;
+     height: 208px;
+     background-color: rgba(255, 255, 255, 0.219);
+     border-radius: 10px;
+     margin-bottom: 20px;
+     padding: 10px 10px;
 
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 186px;
+     grid-gap: 10px;
+}
+
+.option-dachboar{
+     background-color: #101936;
+     box-shadow: 0 5px 5px black;
+     border-radius: 10px;
+}
+
+/*candidatos propriedades css*/
+
+.amb-candidatos{
+     width: 100%;
+     height: 436px;
+     background-color: rgba(255, 255, 255, 0.219);
+     border-radius: 10px;
+     padding: 10px 10px;
+}
+
+.form-cad-candidatos{
+     padding: 10px 10px;
+     border-radius: 10px;
+     box-shadow: 0 5px 5px black;
+}
+
+.form-search-candidato{
+     padding: 10px 10px;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 100%;
+     height: 285px;
+     background-color: #101936;
+     box-shadow: 0 5px 5px black;
+}
+
+/*vagas propriedades css*/
+
+.amb-form-cad-vagas{
+     width: 100%;
+     height: 801px;
+     background-color: rgba(255, 255, 255, 0.219);
+     border-radius: 10px;
+     padding: 10px 10px;
+     margin-bottom: 10px;
+}
+
+.amb-cad-vaga{
+     width: 100%;
+     height: 773px;
+     background-color: #101936;
+     border-radius: 10px;
+     padding: 10px 10px;
+}
+
+.textareas-cad-vaga{
+     margin-top: 10px;
+     width: 100%;
+     height: 147px;
+     background-color: rgba(255, 255, 255, 0.158);
+     border: 1px solid rgba(255, 255, 255, 0.24);
+     color: white;
+     font-family: 'Oswald', sans-serif;
+     resize: none;
+}
+
+.textareas-cad-vaga::placeholder{
+     color: #f9ba449f;
+     font-family: 'Oswald', sans-serif;
+}
 
 
 
