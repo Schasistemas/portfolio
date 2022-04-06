@@ -56,7 +56,6 @@ ol, ul {
 .form-cad-candidatos{
      background-color: #101936;
      width: 100%;
-     height: 119px;
 }
 
 .subtitulos-amb{
@@ -112,13 +111,17 @@ ol, ul {
      overflow: auto;
 }
 
+#input-rua-candidato ,#input-bairro-candidato ,#input-estado-candidato, #input-telefone1-candidato{
+     margin-right: 10px;
+}
+
 /*propriedades do layout admin*/
 
 /*header propriedades usuário*/
 
 body{
      display: flex;
-     background-color: #E5E5E5;
+     background-color: #000000;
      padding: 10px 10px;
 }
 
@@ -234,10 +237,10 @@ nav{
 }
 
 .amb-btns-nav-cx{
-     padding: 2px 0 2px 2px;
+     padding: 5px 0 5px 5px;
      border-top-left-radius: 10px;
      border-bottom-left-radius: 10px;
-     background-color: #E5E5E5;
+     background-color: #000000;
 }
 
 .circle{
@@ -253,7 +256,7 @@ nav{
      position: relative;
      width: 10px;
      height: 10px;
-     background-color: #E5E5E5;
+     background-color: #000000;
 }
 
 .cubo-top-btn{
@@ -270,7 +273,6 @@ nav{
 
 .cubo-bottom-ult-btn{
      height: 10px;
-     border: 1px solid red;
 }
 
 .btns-nav-menu{
@@ -483,10 +485,10 @@ main{
 
 .amb-candidatos{
      width: 100%;
-     height: 436px;
      background-color: rgba(255, 255, 255, 0.219);
      border-radius: 10px;
      padding: 10px 10px;
+     margin-bottom: 10px;
 }
 
 .form-cad-candidatos{
@@ -566,7 +568,7 @@ main{
      box-shadow: 0 5px 5px black;
 }
 
-.amb-inputs-logradouro-empresa{
+.amb-inputs-logradouro-empresa, .amb-inputs-logradouro-candidato{
      display: flex;
 }
 
@@ -642,4 +644,58 @@ main{
      font-family: 'Oswald', sans-serif;
      font-family: 25px;
 }
+/*propriedades config modais*/
+.amb-ascent-modal{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+}
+
+.amb-text-modal{
+     padding: 0 10px 0 10px;
+     text-align: center;
+}
+
+.modal{
+     font-family: 'Oswald', sans-serif;    
+}
  
+/*propriedades de modais exclamação*/
+
+.modal-content{
+     background-color: #101936;
+     color: #F9BB44;
+     font-size: 22px;
+}
+
+.style-ascent-exclam{
+     color: #F9BB44;
+     border: 3px solid #dc3545;
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 50px;
+     font-weight: bold;
+     text-align: center;
+     background-color: #dc35466b;
+}
+
+/*propriedades de modais confirm*/
+
+.style-ascent-confirm{
+     color: #F9BB44;
+     border: 3px solid #198754;
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 50px;
+     font-weight: bold;
+     text-align: center;
+     background-color: #1987547e;
+}
