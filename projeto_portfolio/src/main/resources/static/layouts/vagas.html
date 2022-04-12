@@ -6,8 +6,8 @@
      <div class="amb-cad-vaga">
           <div class="subtitulos-amb">Cadastrar Vaga</div>
           <form action="">
-               <input id="input-name-candidato" class="inputs-config form-control " type="text"
-                    placeholder="Informe nome ou cpf do Candidato:" aria-label=".form-control-lg example">
+               <input id="input-name-vaga" class="inputs-config form-control " type="text"
+                    placeholder="Informe nome da vaga:" aria-label=".form-control-lg example">
 
                <textarea class="textareas-cad-vaga form-control" placeholder="Descrição:"></textarea>
                <textarea class="textareas-cad-vaga form-control" placeholder="Principais atividade:"></textarea>
@@ -20,3 +20,6 @@
           </form>
      </div>
 </div>
+<script>
+     $('#input-name-vaga').inputmask("Regex", { regex: "[A-Z a-z ç]*" });
+</script>

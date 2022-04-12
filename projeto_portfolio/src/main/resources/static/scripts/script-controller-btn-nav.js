@@ -1,4 +1,5 @@
 var BTN_NAV = new Object();
+var BTN_DROP = new Object();
 
 $(document).ready(function () {
      

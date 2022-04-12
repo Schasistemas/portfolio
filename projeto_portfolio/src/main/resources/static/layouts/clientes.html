@@ -49,3 +49,10 @@
           </form>
      </div>
 </div>
+
+<script>
+     $('#input-name-cliente, #input-rua-cliente, input-num-cliente, #input-bairro-cliente, #input-cidade-cliente, #input-estado-cliente, #input-pais-cliente').inputmask("Regex", { regex: "[A-Z a-z ç]*" });
+     $('#input-num-cliente').inputmask("Regex",{ regex: "[0-9]{4}"});
+     $('#input-cnpj-cliente').inputmask({ mask: "99.999.999/9999-99"});
+     $('#input-telefone1-cliente, #input-telefone2-cliente').inputmask({ mask: "(99)99999-9999"});
+</script>

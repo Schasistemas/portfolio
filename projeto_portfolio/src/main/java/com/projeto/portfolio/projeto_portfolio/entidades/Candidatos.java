@@ -21,14 +21,14 @@ public class Candidatos {
      private String estado;
      private String pais;
      private String cpf;
-     private String telefone;
+     private String telefone1;
      private String telefoneAuxiliar;
 
      public Candidatos() {
      }
 
      public Candidatos(String nome, String rua, String numero, String bairro, String cidade, String estado, String pais,
-               String cpf, String telefone, String telefoneAuxiliar) {
+               String cpf, String telefone1, String telefoneAuxiliar) {
           this.nome = nome;
           this.rua = rua;
           this.numero = numero;
@@ -37,7 +37,7 @@ public class Candidatos {
           this.estado = estado;
           this.pais = pais;
           this.cpf = cpf;
-          this.telefone = telefone;
+          this.telefone1 = telefone1;
           this.telefoneAuxiliar = telefoneAuxiliar;
      }
 
@@ -113,12 +113,12 @@ public class Candidatos {
           this.cpf = cpf;
      }
 
-     public String getTelefone() {
-          return telefone;
+     public String getTelefone1() {
+          return telefone1;
      }
 
-     public void setTelefone(String telefone) {
-          this.telefone = telefone;
+     public void setTelefone1(String telefone1) {
+          this.telefone1 = telefone1;
      }
 
      public String getTelefoneAuxiliar() {
