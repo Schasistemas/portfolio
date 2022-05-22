@@ -1,0 +1,400 @@
+/*CSS para inicializar projeto*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+header{
+    background-color: #101936;
+}
+
+.cabecalho-site-portfolios li a{
+    color: #F9BB44;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menu-site{
+    width: 40px;
+    height: 40px;
+    color: #F9BB44;
+    cursor: pointer;
+}
+
+main{
+    display: fixed;
+    width: 100%;
+}
+
+/*------------menu nav------------------*/
+
+.container-menu-site{
+    display: flex;
+    position: absolute;
+    width: 0%;
+    top: 0;
+    transition: 0.5s;
+}
+
+.container-menu-site-aberto{
+    width: 100%;
+    transition: 0.5s;
+    
+}
+
+.amb-btns-menu-site{
+    width: 0px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.948);
+    transition: 0.5s;
+    display: none;
+}
+
+.amb-btns-navs{
+    width: 300px;
+    transition: 0.5s;
+    padding: 22px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.amb-nav-btns-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.407);
+}
+
+.amb-btns-menu-site #cabecalho-navs-site{
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+.amb-btns-menu-site #cabecalho-navs-site li{
+    border-bottom:1px solid #0b5dd727;
+    margin-top: 10px;
+}
+
+.amb-btns-menu-site #cabecalho-navs-site li:hover{
+   padding: 0px 15px;
+   transition: 0.2s;
+   border-left:14px solid #0c68f1a8;
+   cursor: pointer;
+}
+
+.cabecalho-site-portfolios-logo{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+#close-menu-site{
+    color: rgba(255, 255, 255, 0.462);
+    width: 25px;
+    height: 25px;
+}
+
+#close-menu-site:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*-----------------------propriedades css section--------------------*/
+
+section{
+    background-image : url('../imagem/compliance-reuniao-empresas-negocio.jpg');
+    height: 100vh;
+    background-color: #1019365e;
+}
+
+.amb-div-raio-layouts{
+    width: 100%;
+    background-color: #1019364f;
+    height: 100vh;
+    padding: 0px 50px;
+    padding-top: 20px;
+}
+
+.container-textos-vagas-titulo-site{
+    width: 500px;
+    color: #F9BB44;
+    padding: 100px 20px 80px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    background-color: #101936fb;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-sub-titulo-site{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*--------------------propriedades css carousel vagas ----------------------*/
+
+.section-carrosel-site{
+    padding: 60px 20px;
+    background-color: #101936;
+}
+
+.vaga-carousel{
+    border: 1px solid #0c68f1a8;
+    color: rgb(221, 221, 221);
+    padding: 10px 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.vaga-carousel:hover{
+    border: 3px solid #0c68f1a8;
+    cursor: pointer;
+}
+
+.tit-pad-site{
+    color: #F9BB44;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.text-site{
+    color: white;
+    font-family: sans-serif;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+.amb-cards-vagas-site{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-card{
+    height: 400px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.box-card1{
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-card2{
+    background-color: #d61728; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-card3{
+    background-color: #38324f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.amb-cards-vagas-site-text{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.box-text-cards{
+    height: 100%;
+    padding: 80px 20px;
+}
+
+.box-text-cards1{
+    background-color: #333333;
+    text-align: left;
+}
+
+.box-text-cards2{
+    background-color: #d61728; 
+}
+
+.box-text-cards3{
+    background-color: #38324f;
+}
+
+.tit-cards-text-site{
+    color: white;
+    font-family:sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text-red-cards-site{
+    margin-top: 40px;
+    color: white;
+    font-family:sans-serif;
+    line-height: 2;
+}
+
+.icon-cards{
+    color: rgba(255, 255, 255, 0.412);
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.box-card:hover{
+    cursor: pointer;
+}
+
+/*--------------- footer -------------*/
+
+footer{
+    border-top: 3px solid rgba(255, 255, 255, 0.188);
+    width: 100%;
+    background-color: #101936; 
+}
+
+footer div{
+    padding: 80px 10px;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    color: #F9BB44;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+}
+
+.anc-site-portal{
+    font-size: 35px;
+    color: #F9BB44;
+    margin-left: 30px;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.anc-site-portal:hover{
+    color: #F9BB44;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.amb-icons-footer{
+    color: #F9BB44;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.amb-icons-footer li{
+    margin-right: 45px;
+    width: 35px;
+    height: 35px;
+}
+
+.amb-icons-footer a{
+    padding: 20px 20px 30px 20px;
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 10px;
+    color: #F9BB44;
+}
+
+.amb-icons-footer a:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.ident-copy-site{
+    border-top: 2px solid #e5e5e514; 
+    text-align: center; 
+    color: #f9ba44; 
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 10px;
+}
+
+/*---------form --------------------*/
+
+.section-form{
+    width: 100%;
+    padding: 60px 80px;
+    background-color: #333333;
+}
+
+#form-duvidas-sites{
+    margin-top: 50px;
+}
+
+.input-form-duvidas{
+    background-color: #101936;
+    border: 1px solid rgba(9,75,121,1);
+    margin-bottom: 10px;
+    resize: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.input-form-duvidas::placeholder{
+    font-family:'Oswald', sans-serif;
+}
+
+#input-textarea{
+    height: 300px;
+}
+
+.btn-form-duvidas{
+    font-family:'Oswald', sans-serif;
+    background-color: #101936;
+    color: #F9BB44;
+    border: 1px solid rgba(9,75,121,1);
+}
+
+.btn-form-duvidas:hover{
+    font-size: 16.5px;
+    color: #101936;
+    background-color: #F9BB44;
+    transition: 0.5s;
+}

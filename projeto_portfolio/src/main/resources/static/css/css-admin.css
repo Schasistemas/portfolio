@@ -121,13 +121,13 @@ ol, ul {
 
 body{
      display: flex;
-     background-color: #000000;
+     background: linear-gradient(90deg, rgba(9,75,121,1) 20%, rgba(9,75,121,1) 20%, black);
      padding: 10px 10px;
 }
 
 header{
      width: 64px;
-     height: 100ch;
+     height: 100fr;
      background-color: #101936;
      border-radius: 10px;
 }
@@ -141,6 +141,24 @@ header{
      padding-top: 10px;
      display: flex;
      align-items: center;
+}
+
+.nav-header-nav-aberto, .a-header-menu-aberto, .dropdown-user-ident-aberto{
+     display: inherit;
+}
+
+.dropdown-menu{
+     background-color: #101936;
+     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.925);
+}
+
+.dropdown-menu .dropdown-item{
+     color: #F9BB44;
+     border-bottom: 1px solid #0b5dd760;
+}
+
+.dropdown-menu .dropdown-item:hover{
+     background-color: rgba(255, 255, 255, 0.121);
 }
 
 .header-menu, .header-menu a{
@@ -172,6 +190,10 @@ header{
      margin-left: 2px;
 }
 
+.aberto{
+     width: 271px;
+}
+
 #btn-menu:hover{
      background-color: rgba(255, 255, 255, 0.322);
 }
@@ -186,16 +208,23 @@ header{
 }
 
 .person-user-avatar{
+     width: 46px;
+     height: 46px;
+}
+
+.image-user{
+     border: 1px solid rgba(255, 255, 255, 0.363);
+     background-color: rgba(255, 255, 255, 0.199);
+     border-radius: 27px;
+     padding: 1px 1px;
      width: 50px;
      height: 50px;
 }
 
-.image-user{
-     margin-right: 5px;
-     border: 1px solid rgba(255, 255, 255, 0.473);
-     background-color: rgba(255, 255, 255, 0.199);
+#image-user{
      border-radius: 27px;
-     padding: 1px 1px;
+     width: 46px;
+     height: 46px;
 }
 
 .dropdown-user-ident{
@@ -218,6 +247,10 @@ header{
      background-color: rgba(255, 255, 255, 0.322);
 }
 
+#btn-user-on{
+     margin-left: 5px;
+}
+
 /*header propriedades nav botões*/
 
 nav{
@@ -237,10 +270,10 @@ nav{
 }
 
 .amb-btns-nav-cx{
-     padding: 5px 0 5px 5px;
+     padding: 1px 0 1px 1px;
      border-top-left-radius: 10px;
      border-bottom-left-radius: 10px;
-     background-color: #000000;
+     background-color: rgba(9,75,121,1);
 }
 
 .circle{
@@ -256,7 +289,7 @@ nav{
      position: relative;
      width: 10px;
      height: 10px;
-     background-color: #000000;
+     background-color: rgba(9,75,121,1);
 }
 
 .cubo-top-btn{
@@ -285,7 +318,7 @@ nav{
      font-size: 25px;
      color: #F9BB44;
      background-color: #101936c9;
-     border: 1px solid rgba(255, 255, 255, 0.74);
+     border: 1px solid rgba(255, 255, 255, 0.281);
 }
 
 #btns-nav-menu-1:active{
@@ -348,13 +381,11 @@ main{
 }
 
 .amb-section{
-     height: 500px;
      width: 100%;
      background-color: #101936;
      border-radius: 10px;
      padding: 10px 10px;
-     padding-bottom: 0;
-     overflow: auto;
+     padding-bottom: 10px;
 }
 
 .a-header-menu{
@@ -370,14 +401,20 @@ footer{
      background-color: #101936;
      border-radius: 10px;
      color: #F9BB44;
+     display: flex;
+     align-items: center;
+     padding: 0 10px 0 10px;
+     justify-content: center;
+     
 }
 
 footer ul{
-     padding: 40px 20px 0px 40px;
      display: flex;
      font-family: 'Oswald', sans-serif;
      justify-content: space-between;
+     width: 100%;
      flex-wrap: wrap;
+     justify-content: space-between;
 }
 
 footer ul li .a-icon-footer{
@@ -388,29 +425,31 @@ footer ul li .a-icon-footer{
      background-color: rgba(255, 255, 255, 0.116);
      white-space: nowrap;
      width: 195px;
-}
-
-footer ul li a:hover{
-     color: #F9BB44;
-     background-color: rgba(255, 255, 255, 0.322);
+     text-align: center;
 }
 
 ul .amb-icons-footer{
-     padding-top: 10px;
      display: flex;
      padding-left: 0;
+}
+
+.amb-icons-footer li {
+     padding: 12px 10px 12px 10px;
+     margin: 4px 2px 0 2px;
+     background-color: rgba(255, 255, 255, 0.116);
+     border-radius: 10px;
+}
+
+.amb-icons-footer li:hover{
+     color: #F9BB44;
+     background-color: rgba(255, 255, 255, 0.322);
+     cursor: pointer;
 }
 
 .amb-icons-a-footer{
      display: flex;
      flex-direction: column;
-}
-
-.amb-icons-footer a{
-     padding: 5px 10px 10px 10px;
-     margin-right: 5px;
-     background-color: rgba(255, 255, 255, 0.116);
-     border-radius: 10px;
+     
 }
 
 ul li .icons-footer{
@@ -464,19 +503,19 @@ main{
 
 .amb-menu-dachboard{
      width: 100%;
-     height: 208px;
      background-color: rgba(255, 255, 255, 0.219);
      border-radius: 10px;
      margin-bottom: 20px;
      padding: 10px 10px;
+     padding-bottom: 15px;
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: 186px;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: auto;
      grid-gap: 15px;
 }
 
 .option-dachboar{
-     background-color: #101936;
+     background: linear-gradient(0deg, rgba(103, 32, 184, 0.397) 38%, #101936 99%);
      box-shadow: 0 5px 5px black;
      border-radius: 10px;
 }
@@ -507,20 +546,20 @@ main{
      box-shadow: 0 5px 5px black;
 }
 
-.drop-input-candidato{ 
+.drop-input-candidato, .drop-input-vagas, .drop-input-clientes, .drop-input-user{ 
      position: relative; 
      display: inline-block; 
      width: 100%;
 }
 
-.conteudo-drop-candidato{
+.conteudo-drop-candidato, .conteudo-drop-vagas, .conteudo-drop-clientes, .conteudo-drop-user{
      width: 100%; 
      height: 30px; 
      position: absolute;
      display: none; 
 }
 
-.dropdown-candidato-cadastro{
+.dropdown-candidato-cadastro ,.dropdown-vagas-cadastro, .dropdown-user-cadastro{
      background-color: #0b1125;
      font-family: 'Oswald', sans-serif;
      color: white;
@@ -532,6 +571,18 @@ main{
 }
 
 .dropdown-candidato-cadastro:hover{
+     background-color: #101936;
+     cursor: pointer;
+     border: 1px solid rgba(255, 255, 255, 0.664);
+}
+
+.dropdown-vagas-cadastro:hover{
+     background-color: #101936;
+     cursor: pointer;
+     border: 1px solid rgba(255, 255, 255, 0.664);
+}
+
+.dropdown-user-cadastro:hover{
      background-color: #101936;
      cursor: pointer;
      border: 1px solid rgba(255, 255, 255, 0.664);
@@ -623,7 +674,6 @@ main{
 
 .amb-acessos{
      width: 100%;
-     height: 591px;
      background-color: rgba(255, 255, 255, 0.192);
      border-radius: 10px;
      margin-bottom: 10px;
@@ -633,7 +683,6 @@ main{
 .amb-cad-acessos{
      padding: 10px 10px;
      width: 100%;
-     height: 571px;
      background-color: #101936;
      border-radius: 10px;
      box-shadow: 0 5px 5px black;
@@ -641,6 +690,17 @@ main{
 
 #input-ususario-user{
      margin-right: 5px;
+}
+
+#select-acesso{
+     background-color: rgba(255, 255, 255, 0.158);
+     color: #f9ba449f;
+}
+
+#select-acesso:hover{
+     background-color: #0b1125;
+     cursor: pointer;
+     color: #F9BB44;
 }
 
 #input-pass-user{
@@ -660,7 +720,7 @@ main{
 }
 
 #input-img-user{
-     padding: 100px 400px;
+     padding: 10% 30%;
      background-color: rgba(255, 255, 255, 0.158);
      color: transparent;
      outline: 2px dashed #F9BB44;
@@ -745,4 +805,52 @@ main{
      font-weight: bold;
      text-align: center;
      background-color: #0b5dd75b
+}
+
+.amb-grafics{
+     width: 98%;
+}
+
+.option-dachboar:hover{
+     cursor: pointer;
+     background-color: rgba(255, 255, 255, 0.078);
+     border-radius: 10px;
+}
+
+.option-dachboar:active{
+     background-color: rgba(255, 255, 255, 0.162);
+}
+
+@media(max-width:850px){
+     .amb-menu-dachboard{
+          grid-template-columns: repeat(1, 1fr);
+     }
+}
+
+/*propriedades informações gráficas legendas*/
+
+.list-info-grafics{
+     color: #F9BB44;
+     font-family: 'Oswald', sans-serif;
+}
+
+.list-info-grafics ul li{
+     background: linear-gradient(0deg, rgba(103, 32, 184, 0.397) 38%, #101936 99%);
+     margin: 5px 0 10px 0;
+     padding: 10px 10px;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+     border-bottom: 1px solid #F9BB44;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.32);
+}
+
+.list-info-grafics ul li:hover{
+     transition: 0.2s;
+     border-left: 15px solid #0b5dd7;
+     border-right: 1px solid #0b5dd7;
+     border-bottom: 3px solid #0b5dd7;
+}
+
+.btn-pdf-grafics{
+     font-family: 'Oswald', sans-serif;
 }

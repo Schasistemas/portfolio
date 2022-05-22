@@ -1,6 +1,6 @@
 <script src="scripts/script-menu.js"></script>
 <div class="header-menu">
-     <a class="a-header-menu" href="#">RH Portfólios</a>
+     <a class="a-header-menu" href="/admin">RH Portfólios</a>
 
      <svg xmlns="http://www.w3.org/2000/svg" fill="#F9BB44" class="btn-menu-nav bi bi-list" id="btn-menu"
           viewBox="0 0 16 16">
@@ -11,22 +11,25 @@
 <div class="header-imagem-ident">
 
      <div class="image-user">
+
           <svg xmlns="http://www.w3.org/2000/svg" fill="#F9BB44" class="person-user-avatar bi bi-person-circle"
                viewBox="0 0 16 16">
                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                <path fill-rule="evenodd"
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
           </svg>
+
      </div>
      <div class="dropdown">
-          <button class="dropdown-user-ident btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+          <button class="dropdown-user-ident btn dropdown-toggle" type="button" id="btn-user-on"
                data-bs-toggle="dropdown" aria-expanded="false">
-               Emanuelly Cristina Pereira Schalinski
+
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-               <li><a class="dropdown-item" href="#">Action</a></li>
-               <li><a class="dropdown-item" href="#">Another action</a></li>
-               <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <p id="id-user-on" style="display: none;"></p>
+          <ul class="dropdown-menu" aria-labelledby="btn-user-on">
+               <li><a id="btn-perfil-user" class="dropdown-item" href="#">Perfil</a></li>
+               <li><a id="btn-imagem-user" class="dropdown-item" href="#">Imagem</a></li>
+               <li><a class="dropdown-item" href="/logout">Sair</a></li>
           </ul>
      </div>
 
@@ -40,7 +43,8 @@
                          <div class="circle"></div>
                     </div>
                     <div class="amb-btns-nav-cx">
-                         <button id="btns-nav-menu-1" type="button" class="btns-nav-menu btn" onclick="BTN_NAV.buscarLayout(1)">
+                         <button id="btns-nav-menu-1" type="button" class="btns-nav-menu btn"
+                              onclick="BTN_NAV.buscarLayout(1)">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                    class="bi-icons-btns bi bi-house-door-fill" viewBox="0 0 16 16">
                                    <path
@@ -61,7 +65,8 @@
           <li>
                <div class="btn-amb-cubo-btn">
                     <div class="amb-btns-nav-cx">
-                         <button id="btns-nav-menu-2" type="button" class="btns-nav-menu btn" onclick="BTN_NAV.buscarLayout(2)">
+                         <button id="btns-nav-menu-2" type="button" class="btns-nav-menu btn"
+                              onclick="BTN_NAV.buscarLayout(2)">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                    class="bi-icons-btns bi bi-person-check-fill" viewBox="0 0 16 16">
                                    <path fill-rule="evenodd"
@@ -81,7 +86,8 @@
           <li>
                <div class="btn-amb-cubo-btn">
                     <div class="amb-btns-nav-cx">
-                         <button id="btns-nav-menu-3" type="button" class="btns-nav-menu btn" onclick="BTN_NAV.buscarLayout(3)">
+                         <button id="btns-nav-menu-3" type="button" class="btns-nav-menu btn"
+                              onclick="BTN_NAV.buscarLayout(3)">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                    class="bi-icons-btns bi bi-tools" viewBox="0 0 16 16">
                                    <path
@@ -99,7 +105,8 @@
           <li>
                <div class="btn-amb-cubo-btn">
                     <div class="amb-btns-nav-cx">
-                         <button id="btns-nav-menu-4" type="button" class="btns-nav-menu btn" onclick="BTN_NAV.buscarLayout(4)">
+                         <button id="btns-nav-menu-4" type="button" class="btns-nav-menu btn"
+                              onclick="BTN_NAV.buscarLayout(4)">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                    class="bi-icons-btns bi bi-people-fill" viewBox="0 0 16 16">
                                    <path
@@ -120,7 +127,7 @@
           <li>
                <div class="btn-amb-cubo-btn">
                     <div class="amb-btns-nav-cx">
-                         <button id="btns-nav-menu-5" type="button" class="btns-nav-menu btn">
+                         <button id="btns-nav-menu-5" type="button" class="btns-nav-menu btn" onclick="BTN_NAV.buscarLayout(5)">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                    class="bi-icons-btns bi bi-person-workspace" viewBox="0 0 16 16">
                                    <path
@@ -140,7 +147,8 @@
           <li>
                <div class="btn-amb-cubo-btn">
                     <div class="amb-btns-nav-cx">
-                         <button id="btns-nav-menu-6" type="button" class="btns-nav-menu btn" onclick="BTN_NAV.buscarLayout(6)">
+                         <button id="btns-nav-menu-6" type="button" class="btns-nav-menu btn"
+                              onclick="BTN_NAV.buscarLayout(6)">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                    class="bi-icons-btns bi bi-key-fill" viewBox="0 0 16 16">
                                    <path

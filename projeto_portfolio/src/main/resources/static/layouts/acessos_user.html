@@ -1,0 +1,46 @@
+<div class="titulos-amb">
+    <h1>Perfil</h1>
+</div>
+
+<div class="amb-acessos">
+    <div class="amb-cad-acessos">
+         <div class="subtitulos-amb">Minhas Informações</div>
+         <form id="form-users">
+              <div class="drop-input-user">
+                   <input id="input-name-user" class="inputs-config form-control " type="text"
+                        placeholder="Nome completo:" aria-label=".form-control-lg example">
+
+                   <ul class="conteudo-drop-user">
+
+                   </ul>
+              </div>
+
+              <input id="input-cpf-user" class="inputs-config form-control " type="text" placeholder="CPF:"
+                   aria-label=".form-control-lg example">
+              <input id="input-emai-user" class="inputs-config form-control " type="text" placeholder="E-mail:"
+                   aria-label=".form-control-lg example">
+              <input id="input-telefone-user" class="inputs-config form-control " type="text" placeholder="Telefone:"
+                   aria-label=".form-control-lg example">
+
+              <div class="amb-inputs-logradouro-empresa">
+                   <input id="input-ususario-user" class="inputs-config form-control " type="text"
+                        placeholder="Usuário:" aria-label=".form-control-lg example">
+              </div>
+
+              <div class="amb-btns-config">
+                   <button type="button" class="btns1 btn btn-success" onclick="USER.atualizarDados()">Finalizar</button>
+                   <button style="margin-right: 8px;" type="button" class="btns2 btn btn-danger"
+                        onclick="BTN_NAV.buscarLayout(0)">Cancelar</button>
+              </div>
+         </form>
+    </div>
+</div>
+<script>
+    $('#input-name-user').inputmask("Regex", { regex: "[A-Z a-z ç]*" });
+    $('#input-emai-user').inputmask("email");
+    $('#input-cpf-user').inputmask({ mask: "99999999999" });
+    $('#input-telefone-user').inputmask({ mask: "(99)99999-9999" });
+    
+     var cod = $("#id-user-on").text()
+     USER.buscarInformacoesCadastro(cod)
+</script>

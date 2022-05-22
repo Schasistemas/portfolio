@@ -2,34 +2,6 @@ var CANDIDATO = new Object();
 
 $(document).ready(function () {
 
-     /*
-     CANDIDATO.carregar = function () {
-          $.ajax({
-               url: "/candidatos/carregar",
-               method: "GET",
-               success: function (lista) {
-
-                    var layoutTabela = "";
-
-                    if (lista.length == 0) {
-                         layoutTabela += "<li class='dropdown-candidato-cadastro'>Ainda não há candidatos cadastrados.</li>";
-                    } else {
-
-                         for (let i = 0; i < lista.length; i++) {
-                              layoutTabela += "<li class='dropdown-candidato-cadastro' onclick='CANDIDATO.buscarInformacoesCadastro(" + lista[i].id + ")'>" + lista[i].nome + "<button type='button' class='btns1 btn btn-danger' onclick='MODAL.buscarModalExcluirCandidato(" + lista[i].id + ","+lista[i].nome+")'>EXCLUIR</button></li>";
-                         }
-                    }
-
-                    $(".conteudo-drop-candidato").html(layoutTabela)
-               },
-               error: function (mensagem) {
-                    $("#modalAvisos").html(MODAL.error("<div class='amb-text-modal'>Erro: " + mensagem + "</div>"))
-                    $("#modalAvisos").modal("show");
-               }
-          })
-     }
-     */
-
      CANDIDATO.cadastrar = function () {
 
           var candidato = new Object();
@@ -72,7 +44,7 @@ $(document).ready(function () {
                          $("#modalAvisos").modal("show");
                     },
                     error: function (mensagem) {
-                         $("#modalAvisos").html(MODAL.error(mensagem))
+                         $("#modalAvisos").html(MODAL.error("Status - "+mensagem.status))
                          $("#modalAvisos").modal("show");
                     }
                })
@@ -97,7 +69,7 @@ $(document).ready(function () {
                          var layoutTabela = "";
 
                          for (let i = 0; i < lista.length; i++) {
-                              layoutTabela += "<li class='dropdown-candidato-cadastro' onclick='CANDIDATO.buscarInformacoesCadastro(" + lista[i].id + ")'>" + lista[i].nome + "<button type='button' class='btns1 btn btn-danger' onclick='MODAL.buscarModalExcluirCandidato(" + lista[i].id + ",`"+lista[i].nome+"`)'>EXCLUIR</button></li>";
+                              layoutTabela += "<li class='dropdown-candidato-cadastro' onclick='CANDIDATO.buscarInformacoesCadastro(" + lista[i].id + ")'>" + lista[i].nome + "<button type='button' class='btns1 btn btn-danger' onclick='MODAL.buscarModalExcluirCandidato(" + lista[i].id + ",`" + lista[i].nome + "`)'>EXCLUIR</button></li>";
                          }
 
                          $(".conteudo-drop-candidato").css("display", "block")
@@ -110,6 +82,7 @@ $(document).ready(function () {
                     }
                })
           }
+
      }
 
      CANDIDATO.buscarInformacoesCadastro = function (cod) {
@@ -129,31 +102,31 @@ $(document).ready(function () {
                     $("#input-telefone2-candidato").val(candidato.telefoneAuxiliar)
                },
                error: function () {
-                    $("#modalAvisos").html(MODAL.error(mensagem))
+                    $("#modalAvisos").html(MODAL.error("Status - "+mensagem.status))
                     $("#modalAvisos").modal("show");
                }
           })
           $(".conteudo-drop-candidato").css("display", "none")
      }
 
-     MODAL.buscarModalExcluirCandidato = function (cod,nome) {
-          $("#modalAvisos").html(MODAL.delete(cod,"Excluir cadastro de "+nome+" ?"))
+     MODAL.buscarModalExcluirCandidato = function (cod, nome) {
+          $("#modalAvisos").html(MODAL.deleteCandidato(cod, "Excluir cadastro de " + nome + " ?"))
           $("#modalAvisos").modal("show");
      }
 
      CANDIDATO.excluirCadastro = function (cod) {
 
           $.ajax({
-               url:"/candidatos/deletar/id/"+cod,
-               method:"DELETE",
-               success:function (mensagem) {
+               url: "/candidatos/deletar/id/" + cod,
+               method: "DELETE",
+               success: function (mensagem) {
                     $("#form-candidatos")[0].reset()
                     $("#modalAvisos").html(MODAL.confirm(mensagem))
                     $("#modalAvisos").modal("show");
                },
-               error:function (mensagem) {
+               error: function (mensagem) {
                     $("#modalAvisos").html(MODAL.error("Status - "+mensagem.status))
-                    $("#modalAvisos").modal("show");  
+                    $("#modalAvisos").modal("show");
                }
           })
      }

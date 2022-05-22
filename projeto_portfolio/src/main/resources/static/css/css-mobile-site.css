@@ -1,0 +1,127 @@
+@media(max-width:1200px){
+    footer ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .amb-icons-footer{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lista-text-footer li{
+        
+        margin-top: 50px;
+    }
+
+    
+}
+@media(max-width:900px){
+    /*CSS para inicializar projeto*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+.section-form{
+    padding: 20px 20px;
+}
+
+.amb-cards-vagas-site{
+    display: unset;
+}
+
+.container-textos-vagas-titulo-site{
+    width: 100%;
+    padding: 5px 0 0 0;
+}
+
+#tit-padroes-site{
+    margin-top: 10px;
+}
+
+.btn-form-duvidas{
+    margin-bottom: 20px;
+}
+
+.amb-div-raio-layouts{
+    padding: 0 10px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista-text-footer{
+    text-align: center;
+}
+
+.lista-text-footer li{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.anc-site-portal{
+    white-space: nowrap;
+}
+
+.anc-site-portal{
+    margin: 0 0 0 0;
+}
+
+.amb-icons-footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.amb-icons-footer li{
+    margin: 0px 40px 0 0;
+}
+
+.amb-icons-footer li a{
+    padding: 12px 15px 18px 15px;
+}
+
+.div-raio-layouts{
+    padding-top: 100px;
+    padding: 100px 40px 0 40px;
+}
+
+}
+
+@media(max-width:660px) {
+    .lista-text-footer li{
+        margin: 0px 0 40px 0;  
+    }
+
+    .amb-icons-footer li{
+        margin: 0px 40px 0 0;
+    }
+}
+

@@ -23,6 +23,7 @@ public class Candidatos {
      private String cpf;
      private String telefone1;
      private String telefoneAuxiliar;
+     private String dataCadastro;
 
      public Candidatos() {
      }
@@ -43,6 +44,14 @@ public class Candidatos {
 
      public Long getId() {
           return id;
+     }
+
+     public String getDataCadastro() {
+          return dataCadastro;
+     }
+
+     public void setDataCadastro(String dataCadastro) {
+          this.dataCadastro = dataCadastro;
      }
 
      public void setId(Long id) {

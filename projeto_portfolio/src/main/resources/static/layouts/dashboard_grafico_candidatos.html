@@ -1,0 +1,42 @@
+
+
+<div class="titulos-amb">
+    <h1>Relação de Novos Candidatos</h1><br>
+    <p class="subtitulos-amb">Novos de candidatos que se cadastraram nos meses abaixo:</p>
+</div>
+
+<div class="list-info-grafics"></div>
+
+<button type="button" class="btn-pdf-grafics btn btn-light">Gerar PDF</button>
+
+<script>
+    
+    var layout = "<h3>Referência:</h3><ul>";
+    var result = 0;
+
+    for (let i = 0; i < GRAFICO_CANDIDATOS.dados.labels.length; i++) {
+
+        if (GRAFICO_CANDIDATOS.dados.datasets[0].data[i] !== undefined) {
+            layout += "<li>"+GRAFICO_CANDIDATOS.dados.labels[i]+": "+GRAFICO_CANDIDATOS.dados.datasets[0].data[i]+"</li>"
+        } else {
+            layout += "<li>"+GRAFICO_CANDIDATOS.dados.labels[i]+": N/A</li>"
+        }
+
+    }
+
+    for (let i = 0; i < GRAFICO_CANDIDATOS.dados.datasets[0].data.length; i++) {
+        result += GRAFICO_CANDIDATOS.dados.datasets[0].data[i]
+    }
+
+    layout += "<li>Total no Ano: "+result+" novos candidatos.</li>"
+
+    layout += "<ul>";
+
+    $(".list-info-grafics").html(layout)
+   
+</script>
+
+
+
+
+

@@ -1,0 +1,168 @@
+@media(max-width:900px){
+
+    /*CSS para inicializar projeto*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+     width: 10px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     background: #f1f1f1; 
+   }
+    
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #888; 
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #101936; 
+   }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+    header{
+        width: 100%;
+        position: fixed;
+        border-radius: 0;
+        box-shadow: 0 5px 5px rgba(255, 255, 255, 0.125);
+        padding: 5px 5px;
+        z-index: 1;
+    }
+    
+    .header-menu{
+        padding: 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+   .aberto{
+       width: 100%;
+       height: 100vh;
+   }
+
+    .a-header-menu, .dropdown-user-ident{
+        display: initial; 
+    }
+
+    .header-imagem-ident{
+        padding: 0 0;
+    }
+
+    main{
+        display: none;
+    }
+
+    .amb-section{
+        margin-top: 100px;
+        border-radius: 0;
+    }
+
+    .amb-inputs-logradouro-empresa, .amb-inputs-logradouro-candidato{
+        display: inherit;
+    }
+
+    #input-num-cliente{
+        width: 100%;
+    }
+
+    .amb-clientes, .form-cad-clientes{
+        height: unset;
+    }
+
+    #input-telefone1-cliente, #input-telefone2-cliente{
+        width: 100%;
+    }
+
+    #input-pass-user{
+        margin-left: 0;
+    }
+    
+    footer{
+        border-top: 1px solid #e5e5e521;
+        border-radius: 0;
+        height: auto;
+        padding: 10px 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .amb1-icons-a-footer{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer ul li{
+        margin-top: 20px;
+    }
+
+    .amb-icons-footer a{
+        padding: 12px 15px 20px 15px;
+    }
+
+    #input-img-user{
+        
+        padding: 13% 30%;
+    }
+
+   
+
+}
+
+@media(max-width:400px){
+
+    #amb-input-img-user{
+        height: 120px;
+    }
+
+    #input-img-user{
+        padding: 20px 15px 35px 25px;
+        background-color: rgba(255, 255, 255, 0.158);
+        color: transparent;
+        outline: 2px dashed #F9BB44;
+        outline-offset: -10px;
+        color: #F9BB44;
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    canvas{
+        height:auto !important;
+        font-size: 5px !important;
+    }
+
+    
+}

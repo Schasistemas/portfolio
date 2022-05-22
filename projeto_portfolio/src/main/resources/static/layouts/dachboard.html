@@ -3,13 +3,30 @@
 </div>
 
 <div class="amb-menu-dachboard">
-     <div class="option-dachboar"></div>
-     <div class="option-dachboar"></div>
-     <div class="option-dachboar"></div>
+     <div class="option-dachboar" onclick="GRAFICO_CANDIDATOS.buscarLayoutCandidatos()">
+          <div class="amb-grafics">
+               <canvas id="grafic-candidatos" style="width: 100%; display: flex;"></canvas>
+          </div>
+     </div>
+     <div class="option-dachboar" onclick="GRAFICO_VAGAS.buscarLayoutVagas()">
+          <div class="amb-grafics">
+               <canvas id="grafic-vagas" style="width: 100%; display: flex;"></canvas>
+          </div>
+     </div>
 </div>
 
-<div style="margin-bottom: 0;" class="amb-menu-dachboard">
-     <div class="option-dachboar"></div>
-     <div class="option-dachboar"></div>
-     <div class="option-dachboar"></div>
+<div style="margin-bottom: 10px;" class="amb-menu-dachboard">
+     <div class="option-dachboar" onclick="GRAFICO_CLIENTES.buscarLayoutClientes()">
+          <div class="amb-grafics">
+               <canvas id="grafic-clientes" style="width: 100%; display: flex;"></canvas>
+          </div>
+     </div>
+     <div class="option-dachboar" onclick="GRAFICO_USUARIOS.buscarLayoutUsuarios()">
+          <div class="amb-grafics">
+               <canvas id="grafic-usuarios" style="width: 100%; display: flex;"></canvas>
+          </div>
+     </div> 
 </div>
+<!-- carrega as informações no template do gráfico-->
+<script src="scripts/script-grafics.js"></script>
+

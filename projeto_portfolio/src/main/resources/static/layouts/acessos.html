@@ -5,15 +5,28 @@
 <div class="amb-acessos">
      <div class="amb-cad-acessos">
           <div class="subtitulos-amb">Cadastrar</div>
-          <form action="">
-               <input id="input-name-user" class="inputs-config form-control " type="text" placeholder="Nome completo:"
-                    aria-label=".form-control-lg example">
+          <form id="form-users" enctype="multipart/form-data">
+               <div class="drop-input-user">
+                    <input id="input-name-user" class="inputs-config form-control " type="text"
+                         placeholder="Nome completo:" aria-label=".form-control-lg example" onkeyup="USER.buscarUserPorFragmento()">
+
+                    <ul class="conteudo-drop-user">
+
+                    </ul>
+               </div>
+
                <input id="input-cpf-user" class="inputs-config form-control " type="text" placeholder="CPF:"
                     aria-label=".form-control-lg example">
                <input id="input-emai-user" class="inputs-config form-control " type="text" placeholder="E-mail:"
                     aria-label=".form-control-lg example">
                <input id="input-telefone-user" class="inputs-config form-control " type="text" placeholder="Telefone:"
                     aria-label=".form-control-lg example">
+
+               <select id="select-acesso" class="inputs-config form-select" aria-label="Default select example">
+                    <option selected value="0">Tipo de acesso</option>
+                    <option value="1">Administrador</option>
+                    <option value="2">Cliente</option>
+               </select>
 
                <div class="amb-inputs-logradouro-empresa">
                     <input id="input-ususario-user" class="inputs-config form-control " type="text"
@@ -22,13 +35,8 @@
                          placeholder="Password:" aria-label=".form-control-lg example">
                </div>
 
-               <div id="amb-input-img-user">
-                    <label id="label-input-img" for="input-img-user">INSIRA IMAGEM DE USUÁRIO</label>
-                    <input name="input-img-user" id="input-img-user" class="inputs-config form-control" type="file" aria-label=".form-control-lg">
-               </div>
-
                <div class="amb-btns-config">
-                    <button type="button" class="btns1 btn btn-success">CADASTRAR</button>
+                    <button type="button" class="btns1 btn btn-success" onclick="USER.cadastrar()">CADASTRAR</button>
                     <button style="margin-right: 8px;" type="button" class="btns2 btn btn-danger"
                          onclick="BTN_NAV.buscarLayout(0)">CANCELAR</button>
                </div>
@@ -38,6 +46,6 @@
 <script>
      $('#input-name-user').inputmask("Regex", { regex: "[A-Z a-z ç]*" });
      $('#input-emai-user').inputmask("email");
-     $('#input-cpf-user').inputmask({ mask: "99999999999"});
-     $('#input-telefone-user').inputmask({ mask: "(99)99999-9999"});
+     $('#input-cpf-user').inputmask({ mask: "99999999999" });
+     $('#input-telefone-user').inputmask({ mask: "(99)99999-9999" });
 </script>

@@ -5,11 +5,16 @@
 <div class="amb-clientes">
      <div class="form-cad-clientes">
           <div class="subtitulos-amb">Cadastrar</div>
-          <form action="">
-               <input id="input-name-cliente" class="inputs-config form-control " type="text"
-                    placeholder="Nome da empresa:" aria-label=".form-control-lg example">
-               
-               <textarea class="textareas-cad-clientes form-control" placeholder="Mercado de atuação:"></textarea>
+          <form id="form-clientes" action="">
+               <div class="drop-input-clientes">
+                    <input id="input-name-cliente" class="inputs-config form-control " type="text"
+                         placeholder="Nome da empresa:" aria-label=".form-control-lg example" onkeyup="CLIENTES.buscarCandidatoPorFragmento()">
+                    <ul class="conteudo-drop-clientes">
+
+                    </ul>
+               </div>
+               <textarea id="input-mercado-atuacao-cliente" class="textareas-cad-clientes form-control"
+                    placeholder="Mercado de atuação:"></textarea>
 
                <div class="amb-inputs-logradouro-empresa">
                     <input id="input-rua-cliente" class="inputs-config form-control " type="text" placeholder="Rua:"
@@ -38,13 +43,15 @@
                <div class="amb-inputs-logradouro-empresa">
                     <input id="input-telefone1-cliente" class="inputs-config form-control " type="text"
                          placeholder="Tel do recrutador:" aria-label=".form-control-lg example">
-                    <input id="input-telefone2-cliente" class="inputs-config form-control " type="text" placeholder="Tel responsável da empresa:"
-                         aria-label=".form-control-lg example">
+                    <input id="input-telefone2-cliente" class="inputs-config form-control " type="text"
+                         placeholder="Tel responsável da empresa:" aria-label=".form-control-lg example">
                </div>
 
                <div class="amb-btns-config">
-                    <button type="button" class="btns1 btn btn-success">CADASTRAR</button>
-                    <button type="button" class="btns2 btn btn-danger" onclick="BTN_NAV.buscarLayout(0)">CANCELAR</button>
+                    <button type="button" class="btns1 btn btn-success"
+                         onclick="CLIENTES.cadastrar()">CADASTRAR</button>
+                    <button type="button" class="btns2 btn btn-danger"
+                         onclick="BTN_NAV.buscarLayout(0)">CANCELAR</button>
                </div>
           </form>
      </div>
@@ -52,7 +59,7 @@
 
 <script>
      $('#input-name-cliente, #input-rua-cliente, input-num-cliente, #input-bairro-cliente, #input-cidade-cliente, #input-estado-cliente, #input-pais-cliente').inputmask("Regex", { regex: "[A-Z a-z ç]*" });
-     $('#input-num-cliente').inputmask("Regex",{ regex: "[0-9]{4}"});
-     $('#input-cnpj-cliente').inputmask({ mask: "99.999.999/9999-99"});
-     $('#input-telefone1-cliente, #input-telefone2-cliente').inputmask({ mask: "(99)99999-9999"});
+     $('#input-num-cliente').inputmask("Regex", { regex: "[0-9]{4}" });
+     $('#input-cnpj-cliente').inputmask({ mask: "99.999.999/9999-99" });
+     $('#input-telefone1-cliente, #input-telefone2-cliente').inputmask({ mask: "(99)99999-9999" });
 </script>

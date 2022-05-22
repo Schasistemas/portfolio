@@ -1,0 +1,203 @@
+/*CSS para inicializar projeto*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+body{
+    background-color: rgba(9,75,121,1);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #101936;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    padding-left: 20px;
+}
+
+nav a{
+    color: #F9BB44;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+section{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 5px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #101936;
+    box-shadow: 0 10px 15px black;
+}
+
+.input-form-login{
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(255, 255, 255, 0.256);
+    border: none;
+    color: white;
+}
+
+.input-form-login::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: #f9ba44cc;
+}
+
+.form-select{
+    color: #f9ba44cc;
+}
+
+.form-select:hover{
+    background-color: #101936;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.btn-form-login{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: rgba(9,75,121,1);
+    color: #F9BB44;
+    margin-bottom: 10px;
+}
+
+.btn-form-login:hover{
+    color: #F9BB44;
+    font-size: 22px;
+}
+
+.btn-form-cadastrar{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7.5px 20px;
+    background-color: #f4b033;
+    border-radius: 5px;
+    color: black;
+}
+
+.esqueci-senha-login{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-form-cadastrar:hover{
+    color: black;
+    font-size: 22px;
+}
+
+.btn-form-finalizar-cadastro{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.btn-form-finalizar-cadastro:hover{
+    font-size: 22px;
+}
+
+
+/*-----------------modai propriedades css----------------------*/
+
+.amb-ascent-modal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.amb-text-modal{
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+
+.modal{
+    font-family: 'Oswald', sans-serif;    
+}
+
+/*propriedades de modais exclamação*/
+
+.modal-content{
+    background-color: #101936;
+    color: #F9BB44;
+    font-size: 22px;
+}
+
+.style-ascent-exclam{
+    color: #F9BB44;
+    border: 3px solid #dc3545;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #dc35466b;
+    
+}
+
+/*propriedades de modais confirm*/
+
+.style-ascent-confirm{
+    color: #F9BB44;
+    border: 3px solid #198754;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1987547e;
+}
+
+.amb-icon-login{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#icon-login{
+    color: rgba(9,75,121,1);
+    width: 150px;
+    height: 150px;
+}

@@ -19,6 +19,40 @@ $(document).ready(function () {
                '</div>'
      }
 
+     MODAL.avisoExclamNewUser = function (mensagem) {
+          return '<div class="modal-dialog" role="document">' +
+               '<div class="modal-content">' +
+               '<div class="modal-header">' +
+               '<h5 class="modal-title" id="exampleModalLabel">AVISO</h5>' +
+               '</div>' +
+               '<div class="modal-body">' +
+               '<div class="amb-ascent-modal"><div class="style-ascent-exclam"><h1>!</h1></div></div>'+
+               '<div class="amb-text-modal">' + mensagem + '</div>'+
+               '</div>' +
+               '<div class="modal-footer">' +
+               '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>' +
+               '</div>' +
+               '</div>' +
+               '</div>'
+     }
+
+     MODAL.confirmNewUser = function (mensagem) {
+          return '<div class="modal-dialog" role="document">' +
+               '<div class="modal-content">' +
+               '<div class="modal-header">' +
+               '<h5 class="modal-title" id="exampleModalLabel">AVISO</h5>' +
+               '</div>' +
+               '<div class="modal-body">' +
+               '<div class="amb-ascent-modal"><div class="style-ascent-confirm"><h1>&#10003</h1></div></div>'+
+               '<div class="amb-text-modal">' + mensagem + '</div>'+
+               '</div>' +
+               '<div class="modal-footer">' +
+               '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>' +
+               '</div>' +
+               '</div>' +
+               '</div>'
+     }
+
      MODAL.confirm = function (mensagem) {
           return '<div class="modal-dialog" role="document">' +
                '<div class="modal-content">' +
@@ -36,7 +70,7 @@ $(document).ready(function () {
                '</div>'
      }
 
-     MODAL.delete = function (cod,mensagem) {
+     MODAL.deleteCandidato = function (cod,mensagem) {
           return '<div class="modal-dialog" role="document">' +
           '<div class="modal-content">' +
           '<div class="modal-header">' +
@@ -48,6 +82,60 @@ $(document).ready(function () {
           '</div>' +
           '<div class="modal-footer">' +
           '<button type="button" class="btn btn-success" onclick="CANDIDATO.excluirCadastro('+cod+')">OK</button>' +
+          '<button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCELAR</button>' +
+          '</div>' +
+          '</div>' +
+          '</div>'
+     }
+
+     MODAL.deleteUser = function (cod,mensagem) {
+          return '<div class="modal-dialog" role="document">' +
+          '<div class="modal-content">' +
+          '<div class="modal-header">' +
+          '<h5 class="modal-title" id="exampleModalLabel">AVISO</h5>' +
+          '</div>' +
+          '<div class="modal-body">' +
+          '<div class="amb-ascent-modal"><div class="style-ascent-interrog"><h1>?</h1><br></div></div>'+
+          '<div class="amb-text-modal">' + mensagem + '</div>'+
+          '</div>' +
+          '<div class="modal-footer">' +
+          '<button type="button" class="btn btn-success" onclick="USER.excluirCadastro('+cod+')">OK</button>' +
+          '<button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCELAR</button>' +
+          '</div>' +
+          '</div>' +
+          '</div>'
+     }
+
+     MODAL.deleteCliente = function (cod,mensagem) {
+          return '<div class="modal-dialog" role="document">' +
+          '<div class="modal-content">' +
+          '<div class="modal-header">' +
+          '<h5 class="modal-title" id="exampleModalLabel">AVISO</h5>' +
+          '</div>' +
+          '<div class="modal-body">' +
+          '<div class="amb-ascent-modal"><div class="style-ascent-interrog"><h1>?</h1><br></div></div>'+
+          '<div class="amb-text-modal">' + mensagem + '</div>'+
+          '</div>' +
+          '<div class="modal-footer">' +
+          '<button type="button" class="btn btn-success" onclick="CLIENTES.excluirCadastro('+cod+')">OK</button>' +
+          '<button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCELAR</button>' +
+          '</div>' +
+          '</div>' +
+          '</div>'
+     }
+
+     MODAL.deleteVaga = function (cod,mensagem) {
+          return '<div class="modal-dialog" role="document">' +
+          '<div class="modal-content">' +
+          '<div class="modal-header">' +
+          '<h5 class="modal-title" id="exampleModalLabel">AVISO</h5>' +
+          '</div>' +
+          '<div class="modal-body">' +
+          '<div class="amb-ascent-modal"><div class="style-ascent-interrog"><h1>?</h1><br></div></div>'+
+          '<div class="amb-text-modal">' + mensagem + '</div>'+
+          '</div>' +
+          '<div class="modal-footer">' +
+          '<button type="button" class="btn btn-success" onclick="VAGAS.excluirCadastro('+cod+')">OK</button>' +
           '<button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCELAR</button>' +
           '</div>' +
           '</div>' +

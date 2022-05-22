@@ -1,0 +1,16 @@
+POST http://localhost:8080/candidatos/cadastrar HTTP/1.1
+content-type: application/json
+
+{
+     "nome":"Andrei Schalinski",
+     "rua":"Caçapava",
+     "numero":"182",
+     "bairro":"Bom Retiro",
+     "cidade":"Joinville",
+     "estado":"Santa Catarina",
+     "pais":"Brasil",
+     "cpf":"09382168990",
+     "telefone1":"47999380743",
+     "telefoneAuxiliar":"2",
+     "dataCadastro":"02/06/2022"
+}

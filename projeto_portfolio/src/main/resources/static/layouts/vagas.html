@@ -5,17 +5,29 @@
 <div class="amb-form-cad-vagas">
      <div class="amb-cad-vaga">
           <div class="subtitulos-amb">Cadastrar Vaga</div>
-          <form action="">
-               <input id="input-name-vaga" class="inputs-config form-control " type="text"
-                    placeholder="Informe nome da vaga:" aria-label=".form-control-lg example">
+          <form id="form-vagas" action="">
+               <div id="cod-vaga" style="display: none;">null</div>
+               <div class="drop-input-vagas">
+                    <input id="input-name-vaga" class="inputs-config form-control" type="text"
+                    placeholder="Informe nome da vaga:" aria-label=".form-control-lg example" onkeyup="VAGAS.buscarCandidatoPorFragmento()">
+                    <ul class="conteudo-drop-vagas">
 
-               <textarea class="textareas-cad-vaga form-control" placeholder="Descrição:"></textarea>
-               <textarea class="textareas-cad-vaga form-control" placeholder="Principais atividade:"></textarea>
-               <textarea class="textareas-cad-vaga form-control" placeholder="Requisitos:"></textarea>
-               <textarea class="textareas-cad-vaga form-control" placeholder="Perfil do candidato:"></textarea>
+                    </ul>
+               </div>
+
+               <textarea id="input-descricao-vaga" class="textareas-cad-vaga form-control"
+                    placeholder="Descrição:"></textarea>
+               <textarea id="input-pricipais-atividades-vaga" class="textareas-cad-vaga form-control"
+                    placeholder="Principais atividade:"></textarea>
+               <textarea id="input-requisito-vaga" class="textareas-cad-vaga form-control"
+                    placeholder="Requisitos:"></textarea>
+               <textarea id="input-perfil-vaga" class="textareas-cad-vaga form-control"
+                    placeholder="Perfil do candidato:"></textarea>
                <div class="amb-btns-config">
-                    <button type="button" class="btns1 btn btn-success">CADASTRAR</button>
-                    <button type="button" class="btns2 btn btn-danger" onclick="BTN_NAV.buscarLayout(0)">CANCELAR</button>
+                    <button type="button" class="btns1 btn btn-success"
+                         onclick="VAGAS.cadastrarVagas()">CADASTRAR</button>
+                    <button type="button" class="btns2 btn btn-danger"
+                         onclick="BTN_NAV.buscarLayout(0)">CANCELAR</button>
                </div>
           </form>
      </div>

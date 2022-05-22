@@ -1,0 +1,35 @@
+<div class="titulos-amb">
+    <h1>Relação de Novos Vagas</h1><br>
+    <p class="subtitulos-amb">Novas vagas cadastradas nos meses abaixo:</p>
+</div>
+
+<div class="list-info-grafics"></div>
+
+<button type="button" class="btn-pdf-grafics btn btn-light">Gerar PDF</button>
+
+<script>
+    
+    var layout = "<h3>Referência:</h3><ul>";
+    var result = 0;
+
+    for (let i = 0; i < GRAFICO_VAGAS.dados.labels.length; i++) {
+
+        if (GRAFICO_VAGAS.dados.datasets[0].data[i] !== undefined) {
+            layout += "<li>"+GRAFICO_VAGAS.dados.labels[i]+": "+GRAFICO_VAGAS.dados.datasets[0].data[i]+"</li>"
+        } else {
+            layout += "<li>"+GRAFICO_VAGAS.dados.labels[i]+": N/A</li>"
+        }
+
+    }
+
+    for (let i = 0; i < GRAFICO_VAGAS.dados.datasets[0].data.length; i++) {
+        result += GRAFICO_VAGAS.dados.datasets[0].data[i]
+    }
+
+    layout += "<li>Total no Ano: "+result+" novas vagas.</li>"
+
+    layout += "<ul>";
+
+    $(".list-info-grafics").html(layout)
+   
+</script>
