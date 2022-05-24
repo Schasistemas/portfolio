@@ -885,6 +885,7 @@ main{
      color: #F9BB44;
      border: 1px solid #0b5dd761;
      border-radius: 0;
+z-index:0;
  }
 
  .accordion-body{
@@ -893,22 +894,26 @@ main{
      color: #F9BB44;
      line-height: 23px;
      border: 1px solid #0b5dd761;
+z-index:0;
  }
 
 .accordion-button:hover{
      background-color: #F9BB44;
      color: #0b1125;
+z-index:0;
 }
 
  .accordion-button:not(.collapsed) {
      background-color: #101936;
      color: #F9BB44;
      border-radius: 0;
+z-index:0;
  }
 
  .accordion-item:last-of-type .accordion-button.collapsed {
      border-bottom-left-radius: 0;
      border-bottom-right-radius: 0;
+z-index:0;
  }
 
  .btn-mensagem-site-mobile{
