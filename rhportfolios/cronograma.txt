@@ -1,8 +1,0 @@
-Camadas faltantes do projeto
-
-- Formulário de Login, com dispositivo para aplicação gerar login e senha por meio de botões
-- Site customisável acessado pelo menu de administrador para customizar site aos clientes e candidatos
-- Dashboard com botões de acesso rápido as informações
-- Layouts com informações destacadas dos botões de acesso rápido dos botões
-- Spring securyti com usuários que poderão ser criados pelo usuário admin
-- Para um futuro, fazer ambiente para cliente cadastrar sua vagas e essas serem divulgadas no site de clientes e usuários.
