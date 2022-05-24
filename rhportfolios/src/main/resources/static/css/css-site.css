@@ -124,6 +124,7 @@ main{
     color: rgba(255, 255, 255, 0.462);
     width: 25px;
     height: 25px;
+    margin-left: 10px;
 }
 
 #close-menu-site:hover{
@@ -398,3 +399,60 @@ footer ul{
     background-color: #F9BB44;
     transition: 0.5s;
 }
+
+/*propriedades config modais*/
+.amb-ascent-modal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.amb-text-modal{
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+
+.modal{
+    font-family: 'Oswald', sans-serif;    
+}
+
+/*propriedades de modais exclamação*/
+
+.modal-content{
+    background-color: #101936;
+    color: #F9BB44;
+    font-size: 22px;
+}
+
+.style-ascent-exclam{
+    color: #F9BB44;
+    border: 3px solid #dc3545;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #dc35466b;
+}
+
+/*propriedades de modais confirm*/
+
+.style-ascent-confirm{
+    color: #F9BB44;
+    border: 3px solid #198754;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1987547e;
+}
+

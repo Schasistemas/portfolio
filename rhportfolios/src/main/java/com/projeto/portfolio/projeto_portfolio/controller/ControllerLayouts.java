@@ -44,9 +44,9 @@ public class ControllerLayouts {
           return "novaSenha";
      }
 
-     @RequestMapping("/lembrarsenha")
+     @RequestMapping("/lembrarme")
      public String lembraSenha(){
-          return "lembrarsenha";
+          return "lembrarSenha";
      }
 
      @RequestMapping("/success")

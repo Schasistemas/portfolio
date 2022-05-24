@@ -42,7 +42,7 @@ $(document).ready(function () {
                 contentType: "application/json",
                 data: JSON.stringify(cliente),
                 success: function (mensagem) {
-                    $("#form-clientes")[0].reset()
+                    $("#form-duvidas-sites")[0].reset()
                     $("#modalAvisos").html(MODAL.confirm(mensagem))
                     $("#modalAvisos").modal("show");
                 },

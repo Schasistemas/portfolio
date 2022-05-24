@@ -854,3 +854,63 @@ main{
 .btn-pdf-grafics{
      font-family: 'Oswald', sans-serif;
 }
+
+/*------------------notif-mensagem--------------------*/
+
+#notif-mensagem, #notif-mensagem2{
+     color: white;
+     margin-left: 30px;
+     font-size: 10px;
+     padding: 1px 5px;
+     border-radius: 10px;
+     background-color: rgb(255, 0, 0);
+     width: 20px;
+     font-family: 'Oswald', sans-serif;
+     float: inline-start;
+     overflow: hidden; 
+     text-overflow: ellipsis;
+     text-align: center;
+     
+}
+
+#icon-mensage-main{
+     margin-bottom: 12px;
+}
+
+/*-------propriedades acordion mensagens--------------*/
+
+.accordion-button{
+     background-color: #101936;
+     font-family: 'Oswald', sans-serif;
+     color: #F9BB44;
+     border: 1px solid #0b5dd761;
+     border-radius: 0;
+ }
+
+ .accordion-body{
+     background-color: #101936;
+     font-family: 'Oswald', sans-serif;
+     color: #F9BB44;
+     line-height: 23px;
+     border: 1px solid #0b5dd761;
+ }
+
+.accordion-button:hover{
+     background-color: #F9BB44;
+     color: #0b1125;
+}
+
+ .accordion-button:not(.collapsed) {
+     background-color: #101936;
+     color: #F9BB44;
+     border-radius: 0;
+ }
+
+ .accordion-item:last-of-type .accordion-button.collapsed {
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+ }
+
+ .btn-mensagem-site-mobile{
+      display: none;
+ }

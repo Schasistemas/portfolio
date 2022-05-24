@@ -1,4 +1,16 @@
+var BTN_MENU_PORTAL = new Object()
+
 $(document).ready(function () {
+
+     BTN_MENU_PORTAL.fecharMenu = function () {
+          $("#header-nav-amb").removeClass("aberto")
+          $(".nav-header").removeClass("nav-header-nav-aberto")
+          $(".nav-header").removeClass("btn-menu-nav-aberto")
+          $(".btn-menu-nav").css({ border: "1px solid rgba(255, 255, 255, 0.473)" })
+          $(".a-header-menu").removeClass("a-header-menu-aberto")
+          $(".dropdown-user-ident").removeClass("dropdown-user-ident-aberto")
+          $(".amb-grafics").css({ width: "98%" })
+     }
 
      $(".btn-menu-nav").click(function () {
 
@@ -6,7 +18,7 @@ $(document).ready(function () {
 
                $("#header-nav-amb").addClass("aberto")
                $(".nav-header").addClass("nav-header-nav-aberto")
-               $(".btn-menu-nav").css({border:"3px solid #F9BB44"})
+               $(".btn-menu-nav").css({ border: "3px solid #F9BB44" })
                $(".a-header-menu").addClass("a-header-menu-aberto")
                $(".dropdown-user-ident").addClass("dropdown-user-ident-aberto")
                $(".amb-grafics").css({ width: "98%" })
@@ -15,7 +27,7 @@ $(document).ready(function () {
                $("#header-nav-amb").removeClass("aberto")
                $(".nav-header").removeClass("nav-header-nav-aberto")
                $(".nav-header").removeClass("btn-menu-nav-aberto")
-               $(".btn-menu-nav").css({border:"1px solid rgba(255, 255, 255, 0.473)"})
+               $(".btn-menu-nav").css({ border: "1px solid rgba(255, 255, 255, 0.473)" })
                $(".a-header-menu").removeClass("a-header-menu-aberto")
                $(".dropdown-user-ident").removeClass("dropdown-user-ident-aberto")
                $(".amb-grafics").css({ width: "98%" })
@@ -32,5 +44,9 @@ $(document).ready(function () {
      })
 
      SESSION.buscarUserOn()
+
+     setInterval(function () {
+          MENSAGEM_SITE.buscarMensagem()
+     }, 10)
 
 })

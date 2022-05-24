@@ -2,15 +2,15 @@
 <form id="form-duvidas-sites" action="">
     <div>
 
-        <input class="input-form-duvidas form-control" type="text" placeholder="Nome completo:"
+        <input class="input-form-duvidas form-control" id="mensagem-nome" type="text" placeholder="Nome completo:"
             aria-label="default input example">
-        <input class="input-form-duvidas form-control" type="text" placeholder="E-mail:"
+        <input  class="input-form-duvidas form-control" id="mensagem-email" type="text" placeholder="E-mail:"
             aria-label="default input example">
         <textarea class="input-form-duvidas form-control" id="input-textarea" rows="3"
             placeholder="Mensagem:"></textarea>
 
     </div>
     <div style="display: flex; justify-content: center;">
-        <button type="button" class="btn-form-duvidas btn">ENVIAR INFORMAÇÕES</button>
+        <button type="button" class="btn-form-duvidas btn" onclick="MENSAGEM_SITE.enviarMensagem()">ENVIAR INFORMAÇÕES</button>
     </div>
 </form>
