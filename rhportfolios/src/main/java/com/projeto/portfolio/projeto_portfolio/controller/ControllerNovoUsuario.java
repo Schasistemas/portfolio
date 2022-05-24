@@ -73,7 +73,7 @@ public class ControllerNovoUsuario {
         String response = serviceEmail.forgotPassword(emailuser);
 
         if (!response.startsWith("Invalid")) {
-            response = "http://localhost:8080/novaSenha?token=" + response;
+            response = "https://rhportfolios.herokuapp.com/novaSenha?token=" + response;
         }
 
         try {
