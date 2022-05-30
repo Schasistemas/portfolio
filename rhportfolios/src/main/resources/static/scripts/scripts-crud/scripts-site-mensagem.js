@@ -170,7 +170,7 @@ $(document).ready(function () {
             url: "/site/atualizar/status/" + id,
             method: "PUT",
             success: function () {
-                //MENSAGEM_SITE.buscarMensagem()
+                MENSAGEM_SITE.buscarMensagem()
                 MENSAGEM_SITE.atualizarBackgroundStatus()
             },
             error: function () {
