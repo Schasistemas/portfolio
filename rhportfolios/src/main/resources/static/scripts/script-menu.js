@@ -45,8 +45,6 @@ $(document).ready(function () {
 
      SESSION.buscarUserOn()
 
-     setInterval(function () {
-          MENSAGEM_SITE.buscarMensagem()
-     }, 10)
+     MENSAGEM_SITE.buscarMensagem()
 
 })
