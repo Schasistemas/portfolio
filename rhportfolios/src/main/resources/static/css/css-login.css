@@ -51,7 +51,7 @@ section{
     display: flex;
     justify-content: center;
     padding: 20px 5px;
-    
+    padding-top:100px;
 }
 
 form{
