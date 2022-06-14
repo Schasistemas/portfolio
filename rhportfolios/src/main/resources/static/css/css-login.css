@@ -25,8 +25,8 @@ ol, ul {
 }
 
 body{
-	height:100vh;
-	background-size:100% 100%;
+	
+	background-size:100% 100% 100% 100%;
     background-image : url('../imagem/compliance-reuniao-empresas-negocio.jpg');
 }
 
